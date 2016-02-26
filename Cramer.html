@@ -1,0 +1,75 @@
+<html><head><title>Cramer</title><script type="text/javascript" src="Kramer.js"></script>
+    <link rel="shortcut icon" href="icon/Mushroom%20-%201UP.ico" type="image/x-icon"/></head>
+<body>
+<div style="margin: 5px 20px 20px;">
+        <h1>3 coeficientes</h1>
+ <div class="smallfont" style="margin-bottom: 2px;"><b></b> <input value="Abrir" style="margin: 0px; padding: 0px; width: 55px; font-size: 11px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Fechar'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Abrir'; }" type="button"> <input value="Limpar" type="button" onclick="limpar(1)" style="margin: 0px; padding: 0px; width: 55px; font-size: 11px;">
+ </div>
+ <div class="alt2" style="border: 0px inset ; margin: 0px; padding: 5px; width: 800px;">
+ <div style="display: none;">
+     
+<form onkeyup="calcular()">
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; + <input type="text" size="4"></input> &gamma; = <input type="text" size="4"></input> </br></br>
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; + <input type="text" size="4"></input> &gamma; = <input type="text" size="4"></input> </br></br>
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; + <input type="text" size="4"></input> &gamma; = <input type="text" size="4"></input> </br></br></br>    
+    
+    &alpha; = <input type="text" readonly/>
+    &beta; = <input type="text" readonly/> 
+    &gamma; = <input type="text" readonly/></br></br>
+    &Delta; = <input type="text" readonly/>
+    &Delta;&alpha; = <input type="text" readonly/>
+    &Delta;&beta; = <input type="text" readonly/>
+    &Delta;&gamma; = <input type="text" readonly/>
+</form></br>
+ <br>
+ </div>
+ </div>
+ </div>    
+<div style="margin: 5px 20px 20px;">
+    <h1>2 coeficientes</h1>
+ <div class="smallfont" style="margin-bottom: 2px;"><b></b> <input value="Abrir" style="margin: 0px; padding: 0px; width: 55px; font-size: 11px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Fechar'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Abrir'; }" type="button"> <input value="Limpar" type="button" onclick="limpar(2)" style="margin: 0px; padding: 0px; width: 55px; font-size: 11px;">
+ </div>
+ <div class="alt2" style="border: 0px inset ; margin: 0px; padding: 6px; width: 800px;">
+ <div style="display: none;">
+<form onkeyup="calcular2()">
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; = <input type="text" size="4"></input> </br></br>
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; = <input type="text" size="4"></input> </br></br>
+    
+    &alpha; = <input type="text" readonly/>
+    &beta; = <input type="text" readonly/> </br></br>
+    &Delta; = <input type="text" readonly/>
+    &Delta;&alpha; = <input type="text" readonly/>
+    &Delta;&beta; = <input type="text" readonly/>
+</form>
+ <br>
+ </div>
+ </div>
+ </div>  
+<div style="margin: 5px 20px 20px; ">
+    <h1>4 coeficientes</h1>
+ <div class="smallfont" style="margin-bottom: 2px;"><b></b><input value="Abrir" style="margin: 0px; padding: 0px; width: 55px; font-size: 11px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Fechar'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Abrir'; }" type="button"> <input value="Limpar" type="button" onclick="limpar(3)" style="margin: 0px; padding: 0px; width: 55px; font-size: 11px;">
+ </div>
+ <div class="alt2" style="border: 0px inset ; margin: 0px; padding: 6px;">
+ <div style="display: none;">
+<form onkeyup="calcular4()">
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; + <input type="text" size="4"></input> &gamma; + <input type="text" size="4"></input> &theta; = <input type="text" size="4"></input> </br></br>
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; + <input type="text" size="4"></input> &gamma; + <input type="text" size="4"></input> &theta; = <input type="text" size="4"></input> </br></br>
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; + <input type="text" size="4"></input> &gamma; + <input type="text" size="4"></input> &theta; = <input type="text" size="4"></input> </br></br>
+    <input type="text" size="4"></input> &alpha; + <input type="text" size="4"></input> &beta; + <input type="text" size="4"></input> &gamma; + <input type="text" size="4"></input> &theta; = <input type="text" size="4"></input> </br></br>
+
+    &alpha; = <input type="text" readonly/> 
+    &beta; = <input type="text" readonly/>
+    &gamma; = <input type="text" readonly/>
+    &theta; = <input type="text" readonly/></br></br>
+    &Delta; = <input type="text" readonly/>
+    &Delta;&alpha; = <input type="text" readonly/>
+    &Delta;&beta; = <input type="text" readonly/>
+    &Delta;&gamma; = <input type="text" readonly/>
+    &Delta;&theta; = <input type="text" readonly/>
+</form>
+ <br>
+ </div>
+ </div>
+ </div>
+</body>
+</html>
